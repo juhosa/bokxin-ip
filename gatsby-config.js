@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Generoi Bokxi IP`,
+    title: `Muodosta Bokxi IP`,
     description: ``,
     author: `@juhosa`,
   },
