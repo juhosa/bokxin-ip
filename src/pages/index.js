@@ -12,6 +12,7 @@ const IndexPage = () => {
     // console.log({ osat })
     setIp("")
     if (osat.loppu === "" || osat.loppu.length !== 4) return
+    if (osat.loppu.slice(0, 1) !== "2" && osat.loppu.slice(0, 1) !== "3") return
 
     let ekanumero = ""
     let loppu = osat.loppu
@@ -26,10 +27,10 @@ const IndexPage = () => {
     }
 
     let loppuosa = ""
-    for (let i of loppu.slice(1)) {
-      if (i !== "0") {
-        loppuosa += i
-      }
+    loppuosa = loppu.slice(1)
+
+    if(loppuosa.charAt(0) === '0'){
+        loppuosa = loppuosa.substr(1)
     }
 
     setIp(`10.22${ekanumero}.${loppuosa}.x`)
