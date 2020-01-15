@@ -30,7 +30,7 @@ const IndexPage = () => {
     let loppuosa = ""
     loppuosa = loppu.slice(1)
 
-    while(loppuosa.charAt(0) === 0){
+    while(loppuosa.charAt(0) === '0'){
         loppuosa = loppuosa.substr(1)
     }
 
