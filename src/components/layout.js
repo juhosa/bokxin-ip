@@ -39,6 +39,10 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()}, Tehny
           {` `}
           <a href="https://github.com/juhosa">Juho</a>
+          {` `}
+          ja
+          {` `}
+          <a href="https://github.com/juhosa/bokxin-ip/graphs/contributors">kumppanit</a>
         </footer>
       </div>
     </>
