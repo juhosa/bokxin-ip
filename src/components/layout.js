@@ -36,9 +36,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Tehny
+          ©2020-{new Date().getFullYear()}
           {` `}
-          <a href="https://github.com/juhosa">Juho</a>
+          <a href="https://github.com/juhosa">Juho Salli</a>
           {` `}
           ja
           {` `}
